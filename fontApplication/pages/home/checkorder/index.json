@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-uploader": "/miniprogram_npm/@vant/weapp/uploader/index",
+    "van-dropdown-menu": "/miniprogram_npm/@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "/miniprogram_npm/@vant/weapp/dropdown-item/index",
+    "van-swipe-cell": "/miniprogram_npm/@vant/weapp/swipe-cell/index",
+    "van-cell": "/miniprogram_npm/@vant/weapp/cell/index",
+    "van-cell-group": "/miniprogram_npm/@vant/weapp/cell-group/index",
+    "van-card": "/miniprogram_npm/@vant/weapp/card/index",
+    "check-card":"/components/checkCard/index"
+  }
+}

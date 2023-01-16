@@ -1,0 +1,6 @@
+<!--components/footerBar.wxml-->
+<van-tabbar class="bottom-tab" active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item icon="/images/foot/home-o.png">首页</van-tabbar-item>
+  <van-tabbar-item icon="/images/foot/orders-o.png">信息</van-tabbar-item>
+  <van-tabbar-item icon="/images/foot/friends-o.png">我</van-tabbar-item>
+</van-tabbar>

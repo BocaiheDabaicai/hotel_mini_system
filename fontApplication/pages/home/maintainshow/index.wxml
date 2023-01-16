@@ -1,0 +1,6 @@
+<!--pages/home/maintainshow/index.wxml-->
+<van-dropdown-menu>
+  <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" bind:change="onAreaChange"/>
+  <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" bind:change="onStatusChange"/>
+</van-dropdown-menu>
+<maintain-card wx:for="{{mockList}}" wx:key="unique" item="{{item}}" bind:updateData="updateData"></maintain-card>

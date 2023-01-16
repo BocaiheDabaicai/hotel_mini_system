@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-image": "/miniprogram_npm/@vant/weapp/image/index",
+    "van-dropdown-menu": "/miniprogram_npm/@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "/miniprogram_npm/@vant/weapp/dropdown-item/index",
+    "maintain-card":"/components/maintainCard/index"
+  }
+}

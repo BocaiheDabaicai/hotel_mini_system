@@ -1,0 +1,75 @@
+<!--pages/home/index.wxml-->
+<view class="container-top">
+  <swiper
+    indicator-dots="{{indicatorDots}}" autoplay="{{autoPlay}}" circular="{{circular}}" 
+    interval="{{interval}}" duration="{{duration}}"	indicator-active-color="{{indicatorActiveColor}}">
+    <block wx:for="{{dataTest}}" wx:key="*this">
+      <swiper-item>
+        <image src="/images/swider_{{item}}.png" mode="aspectFit"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="container-middle">
+  <van-grid column-num="2">
+    <van-grid-item 
+    icon="/images/home/orders.png" 
+    text="登记入住" 
+    link-type="navigateTo"
+    url="./register/index">
+    </van-grid-item>
+    <van-grid-item 
+    icon="/images/home/wap-home-o.png" 
+    text="宿舍情况"
+    link-type="navigateTo"
+    style="display: {{controlModal?'none':'block'}};"
+    bindtap="OnClickSituation"
+    url="./situation/index" >
+    </van-grid-item>
+    <van-grid-item 
+    icon="/images/home/changData.png" 
+    text="信息修改" 
+    link-type="navigateTo"
+    style="display: {{controlModal?'block':'none'}};"
+    url="./modification/index">
+    </van-grid-item>
+    <van-grid-item 
+    icon="/images/home/check-orders.png" 
+    text="登记审核" 
+    link-type="navigateTo"
+    style="display: {{controlModal?'block':'none'}};"
+    url="./checkorder/index">
+    </van-grid-item>
+    <van-grid-item 
+    icon="/images/home/hotel.png" 
+    text="公寓情况"
+    link-type="navigateTo"
+    style="display: {{controlModal?'block':'none'}};"
+    url="./apartment/index" >
+    </van-grid-item>
+    <van-grid-item 
+    icon="/images/home/recovery.png" 
+    text="维修上报" 
+    link-type="navigateTo"
+    url="./maintain/index">
+    </van-grid-item>
+    <van-grid-item 
+    icon="/images/home/wap-home-o.png" 
+    style="display: {{controlModal?'block':'none'}};"
+    text="维修情况" 
+    link-type="navigateTo"
+    url="./maintainshow/index">
+    </van-grid-item>
+    <van-grid-item 
+    icon="/images/home/admin.png" 
+    text="管理员"
+    link-type="navigateTo"
+    style="display: {{controlModal?'block':'none'}};"
+    url="./situation/index" >
+    </van-grid-item>
+  </van-grid>
+</view>
+<footer-bar active="0"></footer-bar>
+
+
+

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-grid":"/miniprogram_npm/@vant/weapp/grid",
+    "van-grid-item":"/miniprogram_npm/@vant/weapp/grid-item",
+    "footer-bar":"/components/footerBar/footerBar"
+  }
+}

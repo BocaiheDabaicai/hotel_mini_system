@@ -1,0 +1,91 @@
+.notice-container {
+  margin-bottom: 20rpx;
+}
+
+page {
+  background: #f2f2f2;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.item-flex {
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-white); 
+  border-bottom: 1px solid #dedede;
+}
+
+input,textarea{
+  background-color: #f6f6f6;
+  padding: 13rpx;
+  color: var(--color-text-second);
+} 
+.item-flex text {
+  color: #000;
+  font-size: 32rpx;
+  text-align: left;
+  width: 140rpx;
+}
+.m-item {
+  background: #fff;
+  display: flex;
+  font-size: 32rpx;
+  padding: 3%;
+  align-items: center;
+}
+
+.m-item text {
+  line-height: 50rpx;
+  margin-left: 20rpx;
+}
+
+.tip-text {
+  color: tomato;
+}
+.in-6 {
+  background-color: #fff;
+
+  padding: 15rpx 15rpx 4px;
+}
+
+.cardBox {
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin: 20rpx 20rpx 0rpx;
+  padding: 26rpx;
+}
+
+.in-1,
+.in-2,
+.in-3,
+.in-4,
+.in-7 {
+  width: 250rpx;
+  border-radius: 10rpx;
+  text-align: center;
+}
+.in-5{
+  border-radius: 10rpx;
+  height: 160rpx;
+  width: 100%;
+}
+.m-btn {
+  background-color: #3070f0;
+  color: #fff;
+  border-radius: 90rpx; 
+  margin: 40rpx auto 0 auto;
+  width: 100%;
+  height: 100rpx;
+}
+.text-dorm {
+  margin: 0 20rpx;
+}
+
+.in-8 text {
+  color: #000;
+  font-size: 26rpx;
+  margin-top: 20rpx;
+  text-align: center;
+}

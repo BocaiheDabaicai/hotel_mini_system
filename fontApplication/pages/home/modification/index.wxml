@@ -1,0 +1,11 @@
+<!--pages/home/modification/index.wxml-->
+<view class="container-top">
+  <van-cell title="房间号选择" value="{{title}}" is-link bind:click="showPopup" />
+  <van-popup show="{{ show }}" bind:close="onClose" position="top">
+    <van-area area-list="{{ areaList }}" bind:cancel="onCancel" bind:confirm="onConfirm"/>
+  </van-popup>
+</view>
+<view class="container-card" wx:for="{{testObject}}" wx:key="unique"> 
+  <people-card list="{{item}}" bind:departmentevent="onDepartmentCard" bind:changeevent="onChangeCard"></people-card>
+</view>
+

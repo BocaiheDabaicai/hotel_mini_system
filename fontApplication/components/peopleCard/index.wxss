@@ -1,0 +1,109 @@
+/* components/peopleCard/index.wxss */
+.FirstLabel{
+  position: relative;
+  height:fit-content;
+  background-color: rgb(222, 242, 248);
+  border-style:double;
+  border-color: rgb(168, 228, 252);
+}
+.part1{
+  position: relative;
+  flex-direction: row;
+  letter-spacing: 5rpx;
+  width: 500rpx;
+  height: 20rpx;
+  padding: 20rpx;
+}
+.part1 text{
+  padding: 30rpx;
+}
+.part2{
+  position: relative;
+  flex-direction:row;
+  letter-spacing: 5rpx;
+  width: 600rpx;
+  height: 20rpx;
+  padding: 20rpx;
+}
+.part2 text{
+  padding: 30rpx;
+}
+.part3{
+  position: relative;
+  flex-direction:row;
+  letter-spacing: 5rpx;
+  width: 600rpx;
+  height: 20rpx;
+  padding: 20rpx;
+}
+.part3 text{
+  padding: 30rpx;
+}
+.part4{
+  position: relative;
+  flex-direction:column;
+  letter-spacing: 5rpx;
+  width: 600rpx;
+  height: 120rpx;
+  padding: 20rpx;
+}
+.part4 view{
+  position: relative;
+  flex-direction:column;
+  width: 600rpx;
+  height:50rpx
+}
+.part4 view text{
+  padding: 30rpx;
+}
+.part5{
+  position: relative;
+  flex-direction:column;
+  letter-spacing: 5rpx;
+  width: 600rpx;
+  height: 80rpx;
+  padding: 20rpx;
+}
+.part5 view text{
+  padding: 30rpx;
+}
+.container-button{
+  position: relative;
+  width: auto;
+  padding: 20rpx;
+  letter-spacing: 10rpx;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 50%;
+}
+.container-button van-button{
+  padding: 35rpx;
+}
+.changeDataModal{
+  position: relative;
+  text-align: center;
+  width: 700rpx;
+  height: auto;
+}
+.changeButtonBox{
+  position: relative;
+  padding: 30rpx;
+}
+.changeButton{
+  position: relative;
+  display: inline;
+  padding: 40rpx;
+}
+.radio-group{
+  position: relative;
+  text-align: center;
+  top: 30rpx;
+  height: 100rpx;
+  width: 700rpx;
+}
+.general-title{
+  position: relative;
+  width: 245rpx;
+  height: 50rpx;
+  color: rgb(109, 109, 107);
+}

@@ -1,0 +1,24 @@
+<!--pages/information/index.wxml-->
+<view class="container-top" style="display:{{status_info}}">
+  <van-cell-group inset>
+    <van-cell title="姓名" value="{{username}}" size="large"/>
+    <van-cell title="性别" value="{{sex}}" size="large"/>
+    <van-cell title="手机号" value="{{phone}}" size="large"/>
+    <van-cell title="身份证" value="{{idcard}}" size="small" center="{{true}}"/>
+    <van-cell title="入住公寓" value="{{apartment}}" label="员工宿舍、招待所" size="large"/>
+    <van-cell title="入住楼层" value="{{floor}}" label="六层、三层" size="large"/>
+    <van-cell title="房间号" value="{{number}}" label="视具体情况显示" size="large"/>
+    <van-cell title="入住类型" value="{{checkName}}" label="你的住宿类型" size="large"/>
+    <van-cell title="入住日期" value="{{checkInDate}}" label="显示你现在的入住时间" size="large"/>
+  </van-cell-group>
+</view>
+<view class="container-mid" style="display:{{status_picture}}">
+  <van-image width="730rpx" height="730rpx" src="/images/config/nodata.png" />
+  <text style="font-size:large;left:220rpx;position:relative">目前你还没有入住</text>
+</view>
+<view class="container-admin" style="display:{{status_admin?'block':'none'}}">
+  <van-image width="730rpx" height="730rpx" src="/images/config/admin.png" />
+  <text style="font-size:large;left:290rpx;position:relative">管理员身份</text>
+</view>
+
+<footer-bar active="1"></footer-bar>

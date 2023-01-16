@@ -1,0 +1,22 @@
+<!--pages/myconfig/index.wxml-->
+<!-- /images/config/1242109.jpg -->
+<view class="container-top">
+  <van-image
+  round
+  width="6rem"
+  height="5.25rem"
+  src="/images/window.png"
+  style="padding-left: 35%; top: 120rpx; position: absolute;"
+  />
+</view>
+<view class="container-middle">
+  <text class="name">{{userInfo.nickName}}</text>
+</view>
+<view class="container-middleTwo">
+  <van-cell-group inset>
+      <van-cell title="微信ID" value="test" />
+      <van-cell title="个性签名" value="今天是开心的一天！" center />
+  </van-cell-group>
+  <van-button round type="info" class="buttonOne" bindtap="comeFirst">账号登出</van-button>
+</view>
+<footer-bar active="2"></footer-bar>

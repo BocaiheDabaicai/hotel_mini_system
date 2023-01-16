@@ -1,0 +1,53 @@
+/**index.wxss**/
+.topImage{
+  position:relative;
+  width: 80rpx;
+  height: 80rpx;
+  right: 10rpx;
+  top: 10rpx;
+}
+.title{
+  font-size: 50rpx;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container-part1{
+  height: 150rpx;
+}
+.container-part2{
+  height: 250rpx;
+  width: 700rpx;
+}
+.container-part3{
+  height: 250rpx;
+  width: 400rpx;
+  flex-direction: row;
+  position: relative;
+  top: 150rpx;
+}
+.container-part4{
+  width: 500rpx;
+  height: 150rpx;
+  position: relative;
+  left: 40rpx;
+  top: 100rpx;
+}
+.container-part5{
+  height: 250rpx;
+  width: 600rpx;
+  flex-direction: row;
+  position: relative;
+  top: 150rpx;
+}
+.itext{
+  font-size: small;
+  position: relative;
+  top: -20rpx;
+  padding: 20rpx;
+}
+.info{
+  position: relative;
+  font-size: 52rpx;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  top: 30%;
+  left: 5%;
+}

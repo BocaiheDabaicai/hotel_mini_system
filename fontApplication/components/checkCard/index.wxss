@@ -1,0 +1,19 @@
+/* components/checkCard/index.wxss */
+.left-button{
+  position: relative;
+  background-color: rgb(31, 158, 31);
+  width: 65px;
+  height: 104px;
+  color:lightyellow;
+  text-align: center;
+  line-height: 200rpx;
+}
+.right-button{
+  position: relative;
+  background-color: red;
+  width: 65px;
+  height: 104px;
+  color:lightyellow;
+  text-align: center;
+  line-height: 200rpx;
+}

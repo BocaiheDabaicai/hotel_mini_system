@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/index",
+    "pages/home/register/index",
+    "pages/home/situation/index",
+    "pages/test/index",
+    "pages/myconfig/index",
+    "pages/information/index",
+    "pages/home/maintain/index",
+    "pages/home/modification/index",
+    "pages/home/apartment/index",
+    "pages/home/checkorder/index",
+    "pages/home/maintainshow/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "南方乳业",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

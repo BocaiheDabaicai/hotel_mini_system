@@ -1,0 +1,31 @@
+/* pages/myconfig/index.wxss */
+.container-top{
+  margin: 0 auto;
+  width: 700rpx;
+  height: 200rpx;
+  background-color: rgb(128, 206, 230);
+}
+.container-middle{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100rpx 0;
+  padding-left: 15rpx;
+  box-sizing: border-box;
+}
+.name{
+  font-size: 40rpx;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container-middleTwo{
+  margin: auto;
+  width: 700rpx;
+  height: 500rpx;
+}
+.buttonOne{
+  position:relative;
+  top: 40%;
+  left: 38%;
+}

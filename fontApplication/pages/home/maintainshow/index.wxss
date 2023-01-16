@@ -1,0 +1,5 @@
+/* pages/home/maintainshow/index.wxss */
+.button{
+  position: relative;
+  margin-left: 10rpx;
+}

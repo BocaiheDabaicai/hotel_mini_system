@@ -1,0 +1,6 @@
+/* pages/home/index.wxss */
+.container-top{
+  margin: 0 auto;
+  height: 300rpx;
+  width: 638rpx;
+}

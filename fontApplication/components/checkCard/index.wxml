@@ -1,0 +1,27 @@
+<!--components/checkCard/index.wxml-->
+<van-swipe-cell right-width="{{ 65 }}" left-width="{{ 65 }}">
+  <view slot="left" class="left-button" bindtap="onCheck">审核</view>
+  <van-cell-group>
+    <van-card
+  desc="所选区域：{{item['area']}} 楼层：{{item['floor']}} 房间号：{{item['number']}} 手机号码：{{item['phone']}} 状态：{{item['status']}}"
+  title="姓名：{{item['username']}}"
+  thumb="/images/logo.png"
+/>
+  </van-cell-group>
+  <view slot="right" class="right-button" bindtap="onDelete">删除</view>
+</van-swipe-cell>
+<van-dialog
+  use-slot
+  title="审核"
+  show="{{ detailShow }}"
+  show-cancel-button
+  bind:cancel="onDialogClose"
+  bind:confirm="onDialogConfirm"
+>
+<van-image
+  width="20rem"
+  height="10rem"
+  fit="cover"
+  src="{{picture}}"
+/>
+</van-dialog>

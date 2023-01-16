@@ -1,0 +1,58 @@
+<!-- 公告栏 -->
+<view class="notice-container">
+  <van-notice-bar left-icon="volume-o" text="请各位同事如实填写信息,方便维修人员进行维修。谢谢大家~" speed="60" />
+</view>
+<view class="cardBox">
+  <!-- 申请 -->
+  <view class="item-flex">
+    <text>申请人: </text>
+    <input class="in-1"  maxlength="5" bindinput="setName"></input>
+  </view>
+  <!-- 故障宿舍号 -->
+  <view class="item-flex">
+    <text>宿舍区域:</text>
+    <van-radio-group value="{{area}}" bind:change="onAreaChange" direction="horizontal">
+      <van-radio name="员工宿舍">员工宿舍</van-radio>
+      <van-radio name="招待所">招待所</van-radio>
+    </van-radio-group>
+  </view>
+  <!-- 宿舍号 -->
+  <view class="item-flex">
+    <text>宿舍号:</text>
+    <input class="in-7" type="number" maxlength="5" bindinput="setDorNumber"></input>
+  </view>
+
+  <!-- 部门 -->
+  <view class="item-flex">
+    <text>部门名称: </text>
+    <input class="in-2"  maxlength="10" bindinput="setDivision" type="text" />
+  </view>
+  <!-- 联系电话 -->
+  <view class="item-flex">
+    <text>联系电话:</text>
+    <input class="in-3"  type="number" maxlength="11" bindinput="setPhone" />
+  </view>
+  <!-- 故障详情 -->
+  <view class="m-item">
+    <view>维修描述:<text class="tip-text">(必填)</text>
+    </view>
+  </view>
+  <view>
+    <textarea bindinput="setDescription"  class="in-5" placeholder="请输入故障描述" type="string"></textarea>
+  </view>
+  <!-- 上传维修图片 -->
+  <view class="item-flex in-8">
+    <van-uploader file-list="{{ fileList }}" 
+    max-count="2" 
+    bind:after-read="uploadPicture" 
+    bind:delete="deletePicture" 
+    upload-text = "上传图片"
+    preview-size = "90px"/>
+  </view>
+  <!-- tip -->
+  <van-toast id="van-toast" />
+  <!-- 提交 -->
+  <view>
+    <button bindtap="handleClick" class="m-btn" hoverClass="m-btn-hover">提交</button>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-tree-select": "/miniprogram_npm/@vant/weapp/tree-select/index",
+    "van-cell": "/miniprogram_npm/@vant/weapp/cell/index",
+    "van-popup": "/miniprogram_npm/@vant/weapp/popup/index",
+    "van-grid": "/miniprogram_npm/@vant/weapp/grid/index",
+    "van-grid-item": "/miniprogram_npm/@vant/weapp/grid-item/index",
+    "van-area": "/miniprogram_npm/@vant/weapp/area/index"
+  }
+}

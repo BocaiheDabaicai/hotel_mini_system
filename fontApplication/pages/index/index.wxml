@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="container-part1" style="flex-direction: row;">
+    <image class="topImage" src="{{logo}}" />
+    <text class="title">南方乳业住宿小程序</text>
+  </view>
+  <view class="container-part2" style="flex-direction: column; display: none;">
+    <!-- <text class="info">欢迎来到南方乳业！</text> -->
+    <van-field v-model="tel" type="tel" label="手机号" size="large"/>
+    <van-field v-model="password" type="password" label="密码" size="large"/>
+  </view>
+  <view class="container-part4">
+    <text class="itext">普通模式</text>
+    <van-switch checked="{{ modalChecked }}" bind:change="onChangeModal" />
+    <text class="itext">管理员模式</text>
+  </view>
+  <view class="container-part3" style="display: {{modalChecked?'none':'block'}};">
+    <van-button size="large" wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"
+    open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
+      极 速 登 录
+    </van-button>
+  </view>
+  <view class="container-part5" style="display: {{modalChecked?'block':'none'}};">
+    <van-cell-group>
+      <van-field
+        label="用户名"
+        value="{{ username }}"
+        placeholder="请输入用户名"
+        border="{{ false }}"
+        bind:change="onUsernameChange"
+        size="large"
+      />
+      <van-field
+        label="密码"
+        value="{{ password }}"
+        placeholder="请输入密码"
+        type="password"
+        border="{{ false }}"
+        bind:change="onPasswordChange"
+        size="large"
+      />
+      <van-button size="large" bind:click="onSubmit">
+      登 录
+      </van-button>
+    </van-cell-group>
+  </view>
+</view>

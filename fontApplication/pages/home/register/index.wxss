@@ -1,0 +1,37 @@
+/* pages/home/register/index.wxss */
+.title{
+  position: relative;
+  font-size: 48rpx;
+  top: -50rpx;
+}
+.bottom{
+  position: absolute;
+  margin-top: -125rpx;
+  margin-left: 180rpx;
+  width: 600rpx;
+  height: 300rpx;
+}
+.sex-title{
+  position: relative;
+  left: 32.5rpx;
+  width: 200rpx;
+  height: 50rpx;
+  color: rgb(109, 109, 107);
+}
+.radio-group{
+  position: relative;
+  top: 30rpx;
+  height: 100rpx;
+  width: 500rpx;
+}
+.container-picture{
+  position: relative;
+  margin: 10rpx;
+  height:auto;
+  width:auto
+}
+.write{
+  font-size:medium;
+  font-weight:400;
+  margin: 10rpx;
+}

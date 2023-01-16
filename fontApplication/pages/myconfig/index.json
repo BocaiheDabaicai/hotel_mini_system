@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "footer-bar":"/components/footerBar/footerBar",
+    "van-image":"/miniprogram_npm/@vant/weapp/image",
+    "van-cell":"/miniprogram_npm/@vant/weapp/cell",
+    "van-cell-group":"/miniprogram_npm/@vant/weapp/cell-group",
+    "van-button":"/miniprogram_npm/@vant/weapp/button"
+  }
+}

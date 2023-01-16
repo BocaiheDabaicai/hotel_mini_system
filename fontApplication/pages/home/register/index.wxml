@@ -1,0 +1,74 @@
+<!--pages/home/register/index.wxml-->
+<div class="container" style="display: {{infoStatus?'':'none'}};">
+  <text class="title">住宿信息填写</text>
+  <van-cell-group>
+    <van-field
+      value="{{ username }}"
+      type="text"
+      label="姓名"
+      placeholder="请输入姓名"
+      bind:change="onNameChange"
+    />
+    <van-field
+      value="{{ phone }}"
+      type="text"
+      label="手机号"
+      placeholder="请输入手机号"
+      bind:change="onPhoneChange"
+    />
+    <view class="radio-group">
+      <van-radio-group  value="{{ sex }}" bind:change="onSexChange" direction="horizontal">
+          <text class="sex-title">性别</text>
+          <van-radio name="男">男</van-radio>
+          <van-radio name="女">女</van-radio>
+      </van-radio-group>
+    </view>
+    
+    <van-field
+      value="{{ idcard }}"
+      type="text"
+      label="身份证"
+      placeholder="请输入身份证"
+      bind:change="onIdcardChange"
+    />
+    <van-cell title="公寓-楼层-房间" is-link bind:click="onClickAFN" />
+    <van-popup show="{{ showAFN }}" bind:close="onCloseAFN" position="bottom">
+      <van-area area-list="{{ areaList }}" bind:cancel="cancelArea" bind:confirm="confirmArea"/>
+    </van-popup>
+    <van-field
+    value="{{apartment}}"
+    label="公寓"
+    readonly
+    />
+    <van-field
+      value="{{floor}}"
+      label="楼层"
+      readonly
+    />
+    <van-field
+      value="{{number}}"
+      label="房间"
+      readonly
+    />
+    <van-cell title="选择入住类型" is-link value="{{ typeColumns }}" bind:click="onDisplay" />
+    <van-popup show="{{ show }}" position="bottom" bind:close="onClose">
+      <van-picker show-toolbar title="入住类型" columns="{{ typeList }}" bind:cancel="onTypeCancel" bind:confirm="onTypeConfirm"/>
+    </van-popup>
+    <view class="container-picture">
+      <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" bind:click-preview="previewFile" bind:delete="deleteFile" max-count="1" style="position:relative;left:62%" preview-size="80px"/>
+      <text style="right: 24%;font-weight:normal;position: relative;font-size:28rpx">OA流程材料</text>
+    </view>
+  </van-cell-group>
+</div>
+<div class="container" style="display: {{infoStatus?'none':''}};">
+  <van-steps steps="{{ steps }}" active="{{ showStatus?'2':'0' }}" style="position:relative;width: 700rpx;height: auto;"/>
+    <text class="write" style="display:{{showStatus?'none':'block'}}">目前您已经登记信息，</text>
+    <text class="write" style="display:{{showStatus?'none':'block'}}">请等待住宿管理人员进行审核。</text>
+    <text class="write" style="display:{{showStatus?'block':'none'}}">欢迎您,您已入住南方乳业。</text>
+</div>
+<div class="bottom" style="display: {{infoStatus?'':'none'}};">
+  <van-row gutter="20">
+    <van-col span="10"><van-button type="info" bind:click="backHome">返回</van-button></van-col>
+    <van-col span="10"><van-button type="info" bind:click="enterList">提交</van-button></van-col>
+  </van-row>
+</div>

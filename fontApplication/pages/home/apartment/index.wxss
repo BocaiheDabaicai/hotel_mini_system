@@ -1,0 +1,12 @@
+/* pages/home/index.wxss */
+.container-list{
+  position: relative;
+  width: 500rpx;
+  height: auto;
+  flex-direction: row;
+}
+.container-list-card{
+  position: relative;
+  width: 30rpx;
+  height: 100rpx;
+}

@@ -1,0 +1,18 @@
+<!--pages/home/situation/index.wxml-->
+<view class="container-top" wx:for="{{personList}}" wx:key="unique" style="display: {{showStatus?'block':'none'}};">
+  <van-card
+  desc="手机号码: {{item.phone}}  入住区域: {{item.area}}  登记日期: {{item.checkindate}} 离宿日期: {{item.checkoutdate}}"
+  title="{{item.username}}"
+  thumb="/images/config/icon.png" 
+  centered="{{true}}"/>
+</view>
+<view class="container-middle" style="display: {{showStatus?'none':'block'}};">
+  <van-image 
+  width="800rpx" 
+  height="800rpx" 
+  src="/images/situation/situation.png" />
+  <text style="font-size: large;">目前您的申请暂未被批准</text>
+</view>
+<view class="container-bottom" style="position: relative;left: 270rpx;top: 50rpx;width: 500rpx; height: 300rpx;">
+  <van-button type="info" bind:click="backHome">返回主界面</van-button>
+</view>

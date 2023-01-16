@@ -1,0 +1,12 @@
+<van-cell title="房间号选择" is-link value="{{value}}" bind:click="showPopup" />
+  <van-popup show="{{ show }}" bind:close="onClose" position="top">
+    <van-area area-list="{{ areaList }}" columns-num="{{ 2 }}" bind:cancel="onCancel" bind:confirm="onConfirm"/>
+  </van-popup>
+<van-grid gutter="{{ 10 }}" direction="horizontal" column-num="3">
+    <van-grid-item
+    link-type="navigateTo"
+    url="../modification/index?area={{targetValue['area']}}&&floor={{targetValue['floor']}}&&number={{item['number']}}"
+    wx:for="{{presentList}}" wx:key="unique"
+    text="{{item['number']}} {{item['present']}}/{{item['available']}}"
+    />
+</van-grid>

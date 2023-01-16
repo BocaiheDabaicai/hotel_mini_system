@@ -1,0 +1,7 @@
+<!--pages/home/checkorder/index.wxml-->
+<van-dropdown-menu active-color="#1989fa" >
+  <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" bind:change="onItemChangeArea"/>
+  <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" bind:change="onItemChangeStatus"/>
+</van-dropdown-menu>
+<check-card item="{{item}}" wx:for="{{mockList}}" wx:key="unique" bind:deleteUpdate="onUpdate"></check-card>
+
